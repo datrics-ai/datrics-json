@@ -2,7 +2,7 @@
 Open source library for the **Datrics** models deserialization
 
 ## Initial source
-The solution is the extension of https://github.com/mlrequest/sklearn-json library
+The solution is based on https://github.com/mlrequest/sklearn-json library
 
 
 ## Getting Started

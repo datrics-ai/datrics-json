@@ -3,7 +3,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='datrics_json',
-      version='0.16',
+      version='1.0',
       description='Open source library for the Datrics models deserialization',
       packages = find_packages(),
       install_requires=[
@@ -13,6 +13,8 @@ setup(name='datrics_json',
             'numpy>=1.18.2',
       ],
       author_email='th@datrics.ai',
+      long_description=long_description,
+      long_description_content_type="text/markdown",
       classifiers=[
             "Programming Language :: Python :: 3",
             "License :: OSI Approved :: MIT License",
