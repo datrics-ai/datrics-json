@@ -14,18 +14,6 @@ install_requires = [x.strip() for x in all_reqs if ('git+' not in x) and (
 dependency_links = [x.strip().replace('git+', '') for x in all_reqs \
                     if 'git+' not in x]
 
-# with open("README.md", "r") as fh:
-#     long_description = fh.read()
-#
-# # automatically captured required modules for install_requires in requirements.txt and as well as configure dependency links
-# with open("requirements.txt", "r") as fh:
-#     all_reqs = fh.read().split('\n')
-# install_requires = [x.strip() for x in all_reqs if ('git+' not in x) and (
-#     not x.startswith('#')) and (not x.startswith('-'))]
-# dependency_links = [x.strip().replace('git+', '') for x in all_reqs \
-#                     if 'git+' not in x]
-
-
 setup(name='datrics_json',
       version='1.5',
       description='Open source library for the Datrics models deserialization',
