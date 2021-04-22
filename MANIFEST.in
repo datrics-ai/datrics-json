@@ -1,0 +1,2 @@
+recursive-include datrics_json/core_model *
+recursive-include datrics_json/serialization *
