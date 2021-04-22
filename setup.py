@@ -6,6 +6,7 @@ import pathlib
 HERE = pathlib.Path(__file__).parent
 # The text of the README file
 long_description = (HERE / "README.md").read_text()
+
 # automatically captured required modules for install_requires in requirements.txt and as well as configure dependency links
 with open(path.join(HERE, 'requirements.txt'), encoding='utf-8') as f:
     all_reqs = f.read().split('\n')
@@ -15,7 +16,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs \
                     if 'git+' not in x]
 
 setup(name='datrics_json',
-      version='1.5',
+      version='1.6',
       description='Open source library for the Datrics models deserialization',
       packages = find_packages(),
       install_requires = install_requires,
