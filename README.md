@@ -21,7 +21,7 @@ import datrics_json as datjson
 model_dict = datjson.from_json(file_name)
 deserialized_model = list(model_dict.get('trained_models').values())[0]['model']
 
-sample_data = model_dict.get('sample_data')['init']
+sample_data = model_dict.get('sample_data')['input']
 
 deserialized_model.predict(sample_data)
 ```
